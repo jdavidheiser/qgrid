@@ -1,9 +1,10 @@
+// nbextensions/jupyter-js-widgets/extension
 if (IPython.version[0] !== '3') {
-    var path = 'nbextensions/widgets/'
+    var path = 'nbextensions/jupyter-js-widgets/'
 } else {
     var path = ''
 }
-define([path + "widgets/js/widget", path + "widgets/js/manager"], function(widget, manager) {
+define([path + "widget", path + "manager"], function(widget, manager) {
 
     var grid;
     var QGridView = widget.DOMWidgetView.extend({
